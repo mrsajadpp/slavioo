@@ -1,0 +1,148 @@
+body {
+    font-size: 15pt;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fredoka', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/*Header starts*/
+.header{
+  display: flex;
+  background-color: orange;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  /*box-shadow: 0px 0px 10px;*/
+}
+.header-text{
+  color: white;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.header-left{
+  background-color: transparent;
+  width: 33.3333333333%;
+}
+.header-center{
+  background-color: transparent;
+  width: 33.3333333333%;
+}
+.header-right{
+  background-color: transparent;
+  width: 33.3333333333%;
+}*/
+
+/*Header ends"*/
+
+/*Main body starts*/
+.main-body{
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.main-heading{
+  color: orange;
+  margin-top: 30%;
+  font-size: 30px;
+}
+.invite-box{
+  width: 300px;
+  height: 290px;
+  background-color: wheat;
+  border-radius: 5%;
+}
+.gravity-logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  margin-top: 20px;
+}
+.gravity-text{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.gravity-description{
+  font-size: 15px;
+  margin-top: -30px;
+  align-items: center;
+}
+.accept-btn{
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 140px;
+  margin-top: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accept-btn:hover{
+  border-radius: 5px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 140px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.table{
+  margin-top: 30px;
+  text-align: center;
+}
+.paragraph-1{
+  margin-top: 80px;
+  font-size: 18px;
+}
+.pre-btn{
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+.pre-btn:hover{
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dp{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+/*Main body ends*/
+
+/*Footer starts*/
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: orange;
+  margin-top: 100px;
+}
+.copy{
+  color: white;
+  font-size: 13px;
+  margin-top: -10px;
+}
+.design{
+  color: white;
+  font-size: 10px;
+}
