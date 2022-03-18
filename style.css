@@ -103,14 +103,13 @@ a{
   font-size: 18px;
 }
 .pre-btn{
-  background-color: orange;
-  color: white;
+  background-color: transparent;
+  color: transparent;
   border: none;
   border-radius: 5px;
   width: 150px;
   height: 40px;
-  margin-top: 40px;
-  font-weight: 600;
+  margin-top: 60px;
 }
 .pre-btn:hover{
   background-color: orange;
