@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>Feedback</title>
+     <!--Favicon starts-->
+  <link rel="icon" href="Gravity.jpg" type="img/.jpg" />
+  <!--Favicon ends-->
+    <link rel="stylesheet" href="feedback.css" type="text/css" media="all" />
+</head>
+
+<body>
+<!--Header starts-->
+  
+  <div class="header">
+    <!--<div class="header-left">-->
+      <h3 class="header-text">GRAVITY</h3>
+    <!--</div>
+    <div class="header-center">
+      <h3 class="header-text">GRAVITY</h3>
+    </div>
+    <div class="header-right">
+      <h3 class="header-text">GRAVITY</h3>
+    </div>-->
+  </div>
+  
+  <!--Header ends-->
+  <!--Main body starts-->
+  <div class="main-body">
+   <center><div class="feedback-box">
+     <form action="javascript:sendmail()" method="post">
+       
+     <center><h3 class="heading">FEEDBACK</h3></center>
+    <div class="type-here">
+      <br />
+      <input type="text" name="Name" id="Name" value="" placeholder="What is your name?" />
+      <br />
+      <input type="email" name="Email" id="Email" value="" placeholder="Your email?"/>
+      <br />
+      <textarea name="Feedback" id="Feedback" rows="8" cols="40" placeholder="Feedback..."></textarea>
+      <br />
+    </div>
+    <div class="sbt-btn">
+      <button type="submit">SUBMIT</button>
+    </div>
+    <center><p class="para">It may take us up to 48 hours to reply to your message.</p></center>
+     </form>
+  </div></center>
+  </div>
+  <!--Main body ends-->
+    <!--Footer starts-->
+  <div class="footer">
+    <p style="color: orange">.</p>
+     <center><p class="copy">&copy; ALL COPYRIGHTS RESERVED.</p>
+    <p class="design">DESIGNED BY <a href="https://sajutalk30.blogspot.com"><span style="color: black">SAJAD PP</span></a></p></center>
+  </div>
+  
+  <!--Footer ends-->
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script
+
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+
+  crossorigin="anonymous"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+ 
+
+<script>  
+
+     function sendmail(){
+
+    
+
+			var name = $('#Name').val();
+
+			var email = $('#Email').val();
+
+      var message = $('#Feedback').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Feedback: '+message;
+
+			//console.log(name, phone, email, message);
+
+			Email.send({
+
+        Host : "smtp.gmail.com",
+
+        Username : "reply.developerstudio@gmail.com",
+
+        Password : "dtcyhohgkknksqbv",
+
+				To: 'reply.developerstudio@gmail.com',
+
+				From: "reply.developerstudio@gmail.com",
+
+				Subject: "New Feedback from "+name,
+
+				Body: Body
+
+			}).then(
+
+				message =>{
+
+					//console.log (message);
+
+					if(message=='OK'){
+
+					alert('Feedback submitted successfully.');
+
+					}
+
+					else{
+
+						console.error (message);
+
+						alert('There is error at sending feedback. ')
+
+						
+
+					}
+
+				}
+
+			);
+
+		}
+
+    </script>
+</body>
+
+</html>
